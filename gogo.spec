@@ -32,7 +32,7 @@ Now! oraz SSE.
 	RPM_OPT_FLAGS="%{rpmcflags}" \
 	USE_E3DN=yes
 cd contrib
-gcc -o cdda2mp3 cdda2mp3.c %{rpmcflags}
+%{__cc} -o cdda2mp3 cdda2mp3.c %{rpmcflags}
 
 %install
 rm -rf $RPM_BUILD_ROOT
