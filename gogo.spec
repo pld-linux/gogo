@@ -26,7 +26,7 @@ Now! oraz SSE.
 %setup -q -n %{name}%{version}
 
 %build
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
