@@ -9,7 +9,7 @@ URL:		http://homepage1.nifty.com/herumi/soft.html
 Source0:	http://homepage1.nifty.com/herumi/soft/gogo2/src/%{name}%{version}.tgz
 # Source0-md5:	94fac7a20d980451fef30729690fab3d
 BuildRequires:	nasm
-Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This software is based lame MP3 encoder. GOGO can encode about TWICE
