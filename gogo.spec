@@ -39,12 +39,10 @@ install -d $RPM_BUILD_ROOT%{_bindir}
 
 install gogo contrib/cdda2mp3 $RPM_BUILD_ROOT%{_bindir}
 
-gzip -9nf readme.txt japandoc/[fi]* contrib/cdda2mp3.txt
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz contrib/*.gz japandoc/*.gz
+%doc readme.txt japandoc/[fi]* contrib/cdda2mp3.txt
 %attr(755,root,root) %{_bindir}/*
