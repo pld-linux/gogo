@@ -1,11 +1,14 @@
 Summary:	MP3 encoder based on lame
-Summary(pl):	Program do kompresji plików MP3 na podstawie lame
+Summary(pl):	Program do kompresji plików MP3 bazowany na lame
 Name:		gogo
 Version:	239b
 Release:	1
 License:	GPL
 Group:		Applications/Sound
+Group(de):	Applikationen/Laut
+Group(es):	Aplicaciones/Sonido
 Group(pl):	Aplikacje/D¼wiêk
+Group(pt_BR):	Aplicações/Som
 URL:		http://homepage1.nifty.com/herumi/soft.html
 Source0:	http://homepage1.nifty.com/herumi/soft/gogo2/src/%{name}%{version}.tgz
 BuildRequires:	nasm
