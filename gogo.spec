@@ -1,12 +1,14 @@
 Summary:	MP3 encoder based on lame
-Summary(pl):	Program do kompresji plików MP3 stworzony na podstawie programu lame
+Summary(pl):	Program do kompresji plików MP3 na podstawie lame
 Name:		gogo
-Version:	224c
+Version:	239b
 Release:	1
 License:	GPL
 Group:		Applications/Sound
 Group(pl):	Aplikacje/D¼wiêk
-Source0:	%{name}%{version}.tgz
+URL:		http://homepage1.nifty.com/herumi/soft.html
+Source0:	http://homepage1.nifty.com/herumi/soft/gogo2/src/%{name}%{version}.tgz
+BuildRequires:	nasm
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -26,20 +28,24 @@ Now! oraz SSE.
 %setup -q -n %{name}%{version}
 
 %build
-%{__make}
+%{__make} \
+	RPM_OPT_FLAGS="%{rpmcflags}" \
+	USE_E3DN=yes
+cd contrib
+gcc -o cdda2mp3 cdda2mp3.c %{rpmcflags}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 
-install gogo $RPM_BUILD_ROOT%{_bindir}
+install gogo contrib/cdda2mp3 $RPM_BUILD_ROOT%{_bindir}
 
-gzip -9nf COPYING readme.txt readme_e.txt
+gzip -9nf readme.txt japandoc/[fi]* contrib/cdda2mp3.txt
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {COPYING,readme.txt,readme_e.txt}.gz
-%attr(755,root,root) %{_bindir}/gogo
+%doc *.gz contrib/*.gz japandoc/*.gz
+%attr(755,root,root) %{_bindir}/*
