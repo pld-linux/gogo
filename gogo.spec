@@ -6,7 +6,7 @@ Release:       1
 Copyright:     GPL
 Group:         Applications/Sound
 Group(pl):     Aplikacje/D¼wiêk
-Source:        %{name}%{version}.tar.gz
+Source:        %{name}%{version}.tgz
 Buildroot:     /tmp/%{name}-%{version}-root
 
 %description
