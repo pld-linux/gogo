@@ -1,7 +1,7 @@
 Summary:       MP3 encoder based on lame
 Summary(pl):   Program do kompresji plików MP3 stworzony na podstawie programu lame
 Name:          gogo
-Version:       224b
+Version:       224c
 Release:       1
 Copyright:     GPL
 Group:         Applications/Sound
@@ -33,8 +33,8 @@ rm -rf $RPM_BUILD_ROOT
 strip gogo
 
 # binary files
-install -d $RPM_BUILD_ROOT%{_prefix}
-install gogo $RPM_BUILD_ROOT%{_prefix}
+install -d 	$RPM_BUILD_ROOT%{_bindir}
+install gogo 	$RPM_BUILD_ROOT%{_bindir}
 
 gzip -9nf COPYING readme.txt readme_e.txt
 
@@ -42,6 +42,6 @@ gzip -9nf COPYING readme.txt readme_e.txt
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(644, root, root, 755)
+%defattr(644,root,root,755)
 %doc {COPYING,readme.txt,readme_e.txt}.gz
-%attr(755, root, root) %{_prefix}/gogo
+%attr(755,root,root) %{_bindir}/gogo
