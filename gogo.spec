@@ -7,7 +7,7 @@ Copyright:     GPL
 Group:         Applications/Sound
 Group(pl):     Aplikacje/D¼wiêk
 Source:        %{name}%{version}.tgz
-Buildroot:     /tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This software is based lame MP3 encoder. GOGO can encode about TWICE as
