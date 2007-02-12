@@ -1,5 +1,5 @@
 Summary:	MP3 encoder based on lame
-Summary(pl):	Program do kompresji plików MP3 bazowany na lame
+Summary(pl.UTF-8):   Program do kompresji plikÃ³w MP3 bazowany na lame
 Name:		gogo
 Version:	239b
 Release:	1
@@ -17,11 +17,11 @@ as fast as original LAME can on K6-2 315MHz, and its quality is the
 about same as LAME's. GOGO makes use of MMX, (Enhanced) 3D Now! and
 SSE if your system supports these units.
 
-%description -l pl
-GOGO jest programem do kompresji plików MP3, który zosta³ stworzony na
-podstawie programu lame. Program ten potrafi byæ dwa razy szybszy od
-orygina³u w systemie z procesorem K6-2 315MHz, zachowuj±c jednocze¶nie
-jako¶æ kompresowanych plików. GOGO wykorzystuje MMX, instrukcje 3D
+%description -l pl.UTF-8
+GOGO jest programem do kompresji plikÃ³w MP3, ktÃ³ry zostaÅ‚ stworzony na
+podstawie programu lame. Program ten potrafi byÄ‡ dwa razy szybszy od
+oryginaÅ‚u w systemie z procesorem K6-2 315MHz, zachowujÄ…c jednoczeÅ›nie
+jakoÅ›Ä‡ kompresowanych plikÃ³w. GOGO wykorzystuje MMX, instrukcje 3D
 Now! oraz SSE.
 
 %prep
