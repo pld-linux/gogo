@@ -1,5 +1,5 @@
 Summary:	MP3 encoder based on lame
-Summary(pl.UTF-8):   Program do kompresji plików MP3 bazowany na lame
+Summary(pl.UTF-8):	Program do kompresji plików MP3 bazowany na lame
 Name:		gogo
 Version:	239b
 Release:	1
